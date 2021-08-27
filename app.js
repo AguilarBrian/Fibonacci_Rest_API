@@ -18,4 +18,4 @@ app.use((err, req, res, next) => {
   res.status(status).send(message);
 });
 
-exports.module = app;
+module.exports = app;
