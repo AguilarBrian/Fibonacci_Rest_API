@@ -4,9 +4,8 @@ const app           = express();
 const router        = require('./router/router');
 const common_router = require('./router/common_views');
 
-app.use('view engine', 'ejs');
-app.use()
-app.use()
+app.set('views', path.join(__dirname, 'public'))
+app.set('view engine', 'ejs')
 
 app.use('fiboapp/', router);
 app.use('/'       , common_router);
